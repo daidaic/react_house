@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+// 导入样式
+import 'antd-mobile/dist/antd-mobile.css';
+// 自己写的样式要放在组件样式后面导入,后面会覆盖前面的
+import './index.css';
+import './assets/fonts/iconfont.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
